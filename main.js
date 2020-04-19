@@ -11,7 +11,7 @@ let mainWindow;
 app.on('ready', function(){
     mainWindow = new BrowserWindow({hasShadow: false, frame: true, minWidth: 200 ,minHeight: 45, webPreferences: {nodeIntegration:true}});
     mainWindow.setPosition(1720,0);
-    mainWindow.setSize(200,45);
+    mainWindow.setSize(1000,800);
     mainWindow.webContents.openDevTools();
     Menu.setApplicationMenu(null);
     mainWindow.loadURL(url.format({
